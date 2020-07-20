@@ -27,13 +27,13 @@ const userData = [{
 }]
 
 // This inherits the property from the UserData one can now create new contacts using the userData as prototype
-// This will be accessed through the user Interface. 
+// This will be accessed through the user Interface and it will create a new contact having all the properties of userData.
 const contact1 = new userData
 
 // This saves the user data to some storage medium 
 userData.saveToSomeCloud()
 
-// This will iterate over the user data to find 
+// This will iterate over the user data to find the object pair.
 function Search (){
     for (let i = 0; i<userData.length; i++){
         if (/*Some logic to check if the keyvalue pair is available*/){
