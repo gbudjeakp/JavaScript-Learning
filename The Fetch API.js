@@ -3,11 +3,13 @@ const myButton = document.getElementById('fetch')
 myButton.addEventListener('click', displayInfo)
 
 function displayInfo () {
-  window.fetch('https://restcountries.eu/rest/v2/all')
+  window.fetch('https://restcountries.eu/rest/v2/all') 
     .then(response => response.json())
     .then(jsonObj => displayData(jsonObj))
     .catch(() => window.alert('API Could not be reached at this time'))
 }
+
+// This displays the data on the page
 function displayData (country) {
   const { name, capital, languages, currencies, population, region } = country[Math.floor(Math.random() * 150)]
   const template = `

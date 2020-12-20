@@ -17,7 +17,7 @@ function geoFindMe (e) {
 
     status.textContent = ''
 
-    const mapUrl = `https://maps.googleapis.com/maps/api/js?key=AIzaSyANvfkYf6XDIxRiG24Oud5VUDvvMyVp9WI&q=${latitude},${longitude}`
+    const mapUrl = `https://maps.googleapis.com/maps/api/js?{APIKEY}=${latitude},${longitude}`
     mapIframe.innerHTML = `<iframe src=' ${mapUrl}' width= 500  height= 500></iframe>`
   }
 
